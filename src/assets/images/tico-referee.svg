@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Retrato de Tico, o Gato Guerreiro, arbitro oficial do classico">
+  <defs>
+    <radialGradient id="ticoBg" cx="50%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#1e3a2f"/>
+      <stop offset="55%" stop-color="#0f2030"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="ticoSkin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8b5a35"/>
+      <stop offset="55%" stop-color="#6f4526"/>
+      <stop offset="100%" stop-color="#553219"/>
+    </linearGradient>
+    <linearGradient id="ticoShirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1f2937"/>
+      <stop offset="100%" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="ticoRing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#10b981"/>
+    </linearGradient>
+    <clipPath id="ticoClip">
+      <circle cx="200" cy="200" r="190"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#ticoClip)">
+    <rect width="400" height="400" fill="url(#ticoBg)"/>
+
+    <!-- Estadio ao fundo: refletores e gramado -->
+    <circle cx="80" cy="70" r="130" fill="#10b981" opacity="0.14"/>
+    <circle cx="326" cy="86" r="130" fill="#3b82f6" opacity="0.12"/>
+    <rect y="300" width="400" height="100" fill="#064e3b" opacity="0.35"/>
+    <path d="M0 322 H400" stroke="#34d399" stroke-width="3" opacity="0.25"/>
+
+    <!-- Ombros / camisa de arbitro -->
+    <path d="M56 400 C58 318 112 282 162 268 L238 268 C288 282 342 318 344 400 Z" fill="url(#ticoShirt)"/>
+    <path d="M162 268 L200 320 L238 268 L224 260 L200 300 L176 260 Z" fill="#e5e7eb"/>
+    <rect x="195" y="300" width="10" height="100" fill="#f59e0b" opacity="0.9"/>
+
+    <!-- Pescoco -->
+    <path d="M172 248 h56 v46 c0 22 -56 22 -56 0 Z" fill="#5a3820"/>
+
+    <!-- Orelhas -->
+    <ellipse cx="118" cy="188" rx="18" ry="26" fill="#6f4526"/>
+    <ellipse cx="282" cy="188" rx="18" ry="26" fill="#6f4526"/>
+
+    <!-- Cabeca careca -->
+    <ellipse cx="200" cy="176" rx="92" ry="108" fill="url(#ticoSkin)"/>
+    <ellipse cx="200" cy="104" rx="58" ry="32" fill="#a86f42" opacity="0.35"/>
+
+    <!-- Sobrancelhas -->
+    <path d="M138 150 q24 -15 48 -4" stroke="#2b1a0e" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M214 146 q24 -11 48 4" stroke="#2b1a0e" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+    <!-- Olhos brancos -->
+    <ellipse cx="162" cy="178" rx="23" ry="15" fill="#f8fafc"/>
+    <ellipse cx="238" cy="178" rx="23" ry="15" fill="#f8fafc"/>
+
+    <!-- Iris verdes -->
+    <circle cx="165" cy="178" r="11" fill="#22c55e"/>
+    <circle cx="235" cy="178" r="11" fill="#22c55e"/>
+    <circle cx="165" cy="178" r="5" fill="#052e16"/>
+    <circle cx="235" cy="178" r="5" fill="#052e16"/>
+    <circle cx="168.5" cy="173.5" r="2.8" fill="#ffffff"/>
+    <circle cx="238.5" cy="173.5" r="2.8" fill="#ffffff"/>
+
+    <!-- Nariz -->
+    <path d="M200 182 q-13 30 3 40 q11 5 20 -2" stroke="#4a2c16" stroke-width="7" fill="none" stroke-linecap="round"/>
+
+    <!-- Sorriso confiante e divertido -->
+    <path d="M160 242 q40 38 80 0" stroke="#3b2412" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <path d="M169 246 q31 22 62 0 q-31 12 -62 0" fill="#5b1020" opacity="0.75"/>
+
+    <!-- Sombra de barba suave -->
+    <path d="M146 214 q12 62 54 70 q42 -8 54 -70 q-6 74 -54 82 q-48 -8 -54 -82 Z" fill="#241408" opacity="0.16"/>
+
+    <!-- Cordao do apito -->
+    <path d="M150 268 q50 46 100 0" stroke="#e5e7eb" stroke-width="5" fill="none" opacity="0.9"/>
+
+    <!-- Apito -->
+    <g transform="translate(200 306)">
+      <rect x="-19" y="-9" width="38" height="21" rx="9" fill="#fbbf24"/>
+      <circle cx="15" cy="2" r="7" fill="#111827"/>
+      <rect x="-23" y="-2" width="10" height="7" rx="3" fill="#f59e0b"/>
+    </g>
+  </g>
+
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#ticoRing)" stroke-width="10"/>
+</svg>

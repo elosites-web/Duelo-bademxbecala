@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogo Festivo de Fim de Ano — Amigos do Badem VS Amigos do Becala</title>
+    <meta name="description" content="Site oficial do Jogo Festivo de Fim de Ano: Amigos do Badem vs Amigos do Becala (Dezembro/2026). Campo interativo com escalações, histórico de eventos, contador regressivo, votação Bola Cheia vs Bola Murcha, galeria e mural da torcida." />
+
+    <!-- Open Graph / WhatsApp / Facebook Share Metadata -->
+    <meta property="og:site_name" content="Duelo de Fim de Ano — Badem VS Becala" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Amigos do Badem VS Amigos do Becala — Duelo de Fim de Ano" />
+    <meta property="og:description" content="Futebol, churrasco, samba e muita resenha. O grande duelo de fim de ano dos Amigos do Badem contra os Amigos do Becala. Dezembro/2026." />
+    <meta property="og:url" content="https://3000-146424a3eadec5be.monkeycode-ai.live/" />
+    <meta property="og:image" content="https://3000-146424a3eadec5be.monkeycode-ai.live/og-image.png" />
+    <meta property="og:image:secure_url" content="https://3000-146424a3eadec5be.monkeycode-ai.live/og-image.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Banner oficial do Duelo de Fim de Ano: Amigos do Badem (azul) VS Amigos do Becala (vermelho), Dezembro/2026" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter / X Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Amigos do Badem VS Amigos do Becala — Duelo de Fim de Ano" />
+    <meta name="twitter:description" content="Futebol, churrasco, samba e muita resenha. O grande duelo de fim de ano dos Amigos do Badem contra os Amigos do Becala. Dezembro/2026." />
+    <meta name="twitter:image" content="https://3000-146424a3eadec5be.monkeycode-ai.live/og-image.png" />
+    <meta name="twitter:image:alt" content="Banner oficial do Duelo de Fim de Ano: Amigos do Badem (azul) VS Amigos do Becala (vermelho), Dezembro/2026" />
+
+    <!-- Favicon e Ícones -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/og-image.png" />
+    <link rel="image_src" href="https://3000-146424a3eadec5be.monkeycode-ai.live/og-image.png" />
+
+    <!-- Schema.org JSON-LD para Eventos Esportivos -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsEvent",
+      "name": "Jogo Festivo de Fim de Ano — Amigos do Badem VS Amigos do Becala",
+      "description": "Site oficial do Jogo Festivo de Fim de Ano: Amigos do Badem vs Amigos do Becala (Dezembro/2026). Campo interativo com escalações, histórico de eventos, contador regressivo, votação Bola Cheia vs Bola Murcha, galeria e mural da torcida.",
+      "image": ["https://3000-146424a3eadec5be.monkeycode-ai.live/og-image.png"],
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "startDate": "2026-12-01T00:00:00-03:00",
+      "location": {
+        "@type": "Place",
+        "name": "Arena da Resenha / Campo Municipal",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "BR"
+        }
+      }
+    }
+    </script>
+
+    <!-- Script para resolução dinâmica de URL absoluta (para navegadores e crawlers que executam JS).
+         Mantém as URLs absolutas alinhadas com o domínio real em que a página está publicada. -->
+    <script>
+      (function() {
+        try {
+          var origin = window.location.origin;
+          var fullUrl = window.location.href;
+          var ogImageUrl = origin + '/og-image.png';
+
+          var metaImg = document.querySelector('meta[property="og:image"]');
+          if (metaImg) metaImg.setAttribute('content', ogImageUrl);
+
+          var metaSecureImg = document.querySelector('meta[property="og:image:secure_url"]');
+          if (metaSecureImg) metaSecureImg.setAttribute('content', ogImageUrl);
+
+          var metaTwImg = document.querySelector('meta[name="twitter:image"]');
+          if (metaTwImg) metaTwImg.setAttribute('content', ogImageUrl);
+
+          var metaUrl = document.querySelector('meta[property="og:url"]');
+          if (metaUrl) metaUrl.setAttribute('content', fullUrl);
+
+          var linkImageSrc = document.querySelector('link[rel="image_src"]');
+          if (linkImageSrc) linkImageSrc.setAttribute('href', ogImageUrl);
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,500;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-emerald-500 selection:text-white min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

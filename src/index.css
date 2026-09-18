@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    /* Altura real da faixa do cabeçalho, atualizada em runtime pelo Navbar
+       via ResizeObserver. Os fallbacks cobrem o primeiro paint. */
+    --navbar-height: 4rem;
+  }
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+@media (min-width: 640px) {
+  html {
+    --navbar-height: 5rem;
+  }
+}
+
+/* Alinhamento das âncoras do menu: o topo de cada seção deve encostar
+   exatamente na borda inferior da faixa do cabeçalho (sticky), em qualquer
+   breakpoint. O valor acompanha a altura real medida pelo Navbar, incluindo
+   a linha de borda inferior do cabeçalho (1px). */
+section[id] {
+  scroll-margin-top: calc(var(--navbar-height) + 1px);
+}
+
+.font-display {
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
