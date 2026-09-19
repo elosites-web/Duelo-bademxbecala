@@ -58,7 +58,7 @@ export const PlayerDetailModal: React.FC<PlayerDetailModalProps> = ({
         subtitle: 'O Troféu que Guarda a Glória dos Amigos do Badem e Becala',
         badge: '🏆 A Disputa Histórica',
         badgeColor: 'bg-emerald-500/15 text-emerald-300 border-emerald-500/30',
-        imageUrl: 'https://images.unsplash.com/photo-1569517282132-25d22f4573e6?auto=format&fit=crop&w=1000&q=80',
+        imageUrl: '/taca-fraternidade.jpg',
         description:
           'Criado para celebrar a união de amigos que jogam juntos há anos, o troféu não tem dono definitivo: ele viaja de capitão em capitão a cada edição de fim de ano, carregando fitas azuis (Badem) e vermelhas (Becala).',
         rules: [
